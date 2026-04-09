@@ -1,13 +1,13 @@
-# 🚀 Rendu de Projet : Workshop Data-Driven Marketing Analytics
+# Rendu de Projet : Workshop Data-Driven Marketing Analytics
 **Équipe Projet : Eric (Data Eng), Antoine (Business Analyst), Sofiane (ML Engineer)**
 
 Ce projet documente la réponse technique et stratégique apportée à la crise de croissance de **AnyCompany Food & Beverage**. L'objectif est de piloter le redressement de la part de marché de 22 % à **32 % d'ici fin 2025**.
 
 ---
 
-## 🏗️ Architecture Technique & Ressources
+## Architecture Technique & Ressources
 
-### 📂 Sources de Données (Data Lake)
+### Sources de Données (Data Lake)
 Les données brutes ont été ingérées depuis le bucket Amazon S3 public :
 * **URL Source S3** : `s3://logbrain-datalake/datasets/food-beverage/`
 * **Format des fichiers** : 
@@ -22,7 +22,7 @@ Les données brutes ont été ingérées depuis le bucket Amazon S3 public :
 
 ---
 
-## 👥 Équipe & Responsabilités
+## Équipe & Responsabilités
 
 * **Eric (Data Engineer)** : Mise en place de l'infrastructure, création des `FILE FORMATS` et ingestion des données via `COPY INTO`.
 * **Antoine (Business Analyst)** : Nettoyage des données (Schéma SILVER), analyses exploratoires SQL et définition des KPIs de performance.
@@ -30,7 +30,7 @@ Les données brutes ont été ingérées depuis le bucket Amazon S3 public :
 
 ---
 
-## 🏗️ Parcours du Lab (Architecture Medallion)
+## Parcours du Lab (Architecture Medallion)
 
 Le projet suit une transformation de la donnée en trois couches distinctes dans Snowflake :
 
@@ -49,7 +49,7 @@ Le projet suit une transformation de la donnée en trois couches distinctes dans
 
 ---
 
-## 📈 Indicateurs Clés de Succès (KPIs)
+## Indicateurs Clés de Succès (KPIs)
 
 | KPI | Source Snowflake | Objectif Business |
 | :--- | :--- | :--- |
@@ -59,7 +59,7 @@ Le projet suit une transformation de la donnée en trois couches distinctes dans
 
 ---
 
-## 🚀 Instructions de Déploiement
+## Instructions de Déploiement
 1. **Initialisation** : Exécuter les scripts de création des schémas (`BRONZE`, `SILVER`, `ANALYTICS`).
 2. **Ingestion** : Lancer le script de chargement `COPY INTO` à partir du stage S3.
 3. **Transformation** : Exécuter les procédures SQL de nettoyage pour peupler la couche Silver.
